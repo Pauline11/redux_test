@@ -1,0 +1,78 @@
+@keyframes moveright {
+    0% {background-color: red;}
+    100% {
+        transform: translateX(1000px);
+        background-color: green;
+    }
+}
+
+.move {
+    width: 100px;
+    /* animation: moveright 5s linear; */
+    background-color: red;
+    transition: background-color 2s linear;
+    
+}
+.move:hover {
+    background-color: green;
+}
+
+.mid{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ellipse {
+    width: 100px;
+    border: 1px solid black;
+}
+
+.annam {
+    position: relative;
+}
+
+.a, .b { 
+    position: absolute; 
+} 
+
+.a { 
+    left: 10px; 
+    top: 10px; 
+    z-index: 2; 
+    animation: move 1s linear; 
+
+} 
+.b { 
+    left: 50px; 
+    top: 50px; 
+    z-index: 1; 
+} 
+@keyframes move { 
+    from { left: 30px; } 
+    to { left: 100px; } 
+
+}
+
+#c {
+    position: relative;
+}
+#d {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.three-column > .left {
+    width: 200px;
+    background-color: red;
+}
+.three-column > .right {
+    width: 200px;
+    background-color: blue;
+}
+.three-column > .middle {
+    background-color: goldenrod;
+}
